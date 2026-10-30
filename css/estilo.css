@@ -1,5 +1,5 @@
 /* o asterisco (*) é um seletor universal que seleciona todos os elementos da página 
-o que é: box-sizing: border-box; é uma propriedade CSS que altera o modelo de caixa padrão dos elementos HTML. Por padrão, a largura e altura de um elemento são calculadas apenas com base no conteúdo, sem incluir o padding (preenchimento interno) e a border (borda). Quando você define box-sizing: border-box;, a largura e altura do elemento passam a incluir o padding e a border, tornando mais fácil controlar o tamanho total do elemento.
+o que é: box-sizing: border-box; é uma propriedade CSS que altera o modelo de caixa padrão dos elementos HTML. Por padrão, a largura e altura de um elemento são calculadas apenas com base no conteúdo, sem incluir o padding (preenchimento interno) e a border (borda). Quando você define box-sizing: border-box;, a largura e altura do elemento passam a incluir o padding e a border, tornando mais fácil controlar o tamanho total do elemento. */
 * {
     box-sizing: border-box; /* inclui padding e border na largura e altura dos elementos */
 }
