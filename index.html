@@ -1,73 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
+  <head>
     <!-- META TAGS
      O que são: informações sobre a página.
      Para que servem: ajudam o navegador a exibir a página corretamente.
      Quando usar: sempre dentro do <head>, uma vez para cada informação. -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!-- Viewport 
      O que é: define como a página deve ser exibida em diferentes dispositivos.
      Para que serve: garante que a página seja responsiva e se ajuste a telas de diferentes tamanhos.
      Quando usar: sempre dentro do <head>, uma vez por página. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guia de HTML e CSS</title>
     <!-- LINK DO CSS
      O que é: liga este HTML ao arquivo de estilos.
      Para que serve: sem ele, a página aparece sem cores nem layout.
      Quando usar: sempre dentro do <head>, uma vez para cada arquivo CSS. -->
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
     <!--HEADER
      O que é: cabeçalho da página.
         Para que serve: contém o título e o menu de navegação.
         Quando usar: sempre dentro do <body> -->
-        <header>
-            <!-- TÍTULO
+    <header>
+      <!-- TÍTULO
              O que é: título da página.
              Para que serve: informa o assunto da página.
              Quando usar: sempre dentro do <header>, uma vez por página. -->
-            <h1>Guia de HTML e CSS</h1>
-            <!-- Nav (menu)
+      <h1>Guia de HTML e CSS</h1>
+      <!-- Nav (menu)
              O que é: menu de navegação da página.
              Para que serve: permite ao usuário navegar entre as seções da página.
              Quando usar: sempre dentro do <header>, geralmente uma no topo da página. -->
-            <nav>
-                <!-- href 
+      <nav>
+        <!-- href 
                 O que é: atributo que define o destino do link.
                 Para que serve: permite criar links para outras seções ou páginas.
                 Quando usar: sempre dentro de uma <a>, uma vez por link e também aparece dentro do link do CSS no topo. -->
-                <a href="#estrutura">Estrutura</a>
-                <a href="#layout">Layout</a>
-                <a href="#extras">Extras</a>
-            </nav>
-        </header>
-            <!-- MAIN
+        <a href="#estrutura">Estrutura</a>
+        <a href="#layout">Layout</a>
+        <a href="#extras">Extras</a>
+      </nav>
+    </header>
+    <!-- MAIN
              O que é: conteúdo principal da página.
              Para que serve: contém as seções e informações principais.
              Quando usar: sempre dentro do <body>, uma vez por página. -->
-        <main>
-            <!-- SECTION
+    <main>
+      <!-- SECTION
                 O que é: seção da página.
                 Para que serve: organiza o conteúdo em blocos temáticos.
                 Quando usar: sempre dentro do <main>, uma ou mais vezes por página. -->
-                    <!-- ID
+      <!-- ID
                 O que é: identificador único para a seção.
                 Para que serve: permite criar links diretos para a seção.
-                Quando usar: pode ir em qualquer elemento, mas deve ser único na página. -->  
-            <section id="estrutura">                 
-                <h2>Estrutura</h2>
-                <p>O HTML é a linguagem de marcação usada para criar páginas web. Ele define a estrutura do conteúdo, como títulos, parágrafos, listas e links.</p>
-            </section>
-            <section id="layout">
-                <h2>Layout</h2>
-                <p>O CSS é a linguagem de estilos usada para definir a aparência das páginas web. Ele permite controlar cores, fontes, espaçamento e layout geral do conteúdo.</p>
-            </section>
-            <section id="extras">
-                <h2>Extras</h2>
-                <p>Além do HTML e CSS, existem outras tecnologias que podem ser usadas para melhorar a experiência do usuário, como JavaScript para interatividade e frameworks para facilitar o desenvolvimento.</p>
-            </section>
-        </main>
-</body>
+                Quando usar: pode ir em qualquer elemento, mas deve ser único na página. -->
+      <section id="estrutura">
+        <h2>Estrutura</h2>
+        <p>
+          O HTML é a linguagem de marcação usada para criar páginas web. Ele
+          define a estrutura do conteúdo, como títulos, parágrafos, listas e
+          links.
+        </p>
+      </section>
+      <section id="layout">
+        <h2>Layout</h2>
+        <p>
+          O CSS é a linguagem de estilos usada para definir a aparência das
+          páginas web. Ele permite controlar cores, fontes, espaçamento e layout
+          geral do conteúdo.
+        </p>
+      </section>
+      <section id="extras">
+        <h2>Extras</h2>
+        <p>
+          Além do HTML e CSS, existem outras tecnologias que podem ser usadas
+          para melhorar a experiência do usuário, como JavaScript para
+          interatividade e frameworks para facilitar o desenvolvimento.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,30 @@
+/* o asterisco (*) é um seletor universal que seleciona todos os elementos da página 
+o que é: box-sizing: border-box; é uma propriedade CSS que altera o modelo de caixa padrão dos elementos HTML. Por padrão, a largura e altura de um elemento são calculadas apenas com base no conteúdo, sem incluir o padding (preenchimento interno) e a border (borda). Quando você define box-sizing: border-box;, a largura e altura do elemento passam a incluir o padding e a border, tornando mais fácil controlar o tamanho total do elemento.
+* {
+    box-sizing: border-box; /* inclui padding e border na largura e altura dos elementos */
+}
+
+body {
+    font-family: Arial, sans-serif; /* define a fonte padrão do corpo do documento a segunda fonte é a reserva caso a primeira não esteja disponível */
+    margin: 0; /* remove a margem padrão do body */
+    background-color: #f4f4f4; /* define a cor de fundo do body */
+}
+
+header {
+    background-color: #333; /* define a cor de fundo do header */
+    color: #fff; /* define a cor do texto do header */
+    padding: 20px; /* adiciona espaçamento interno ao header, diferente do margin, ele aumenta o tamanho do elemento */
+    text-align: center; /* centraliza o texto dentro do header */
+}
+
+nav a {
+    color: #fff; /* define a cor do texto dos links de navegação */
+    text-decoration: none; /* remove o sublinhado dos links */
+    margin: 0 10px; /* adiciona espaçamento horizontal entre os links */
+    font-weight: bold; /* define o peso da fonte dos links como negrito */
+}
+
+nav a:hover {
+    text-decoration: underline; /* adiciona sublinhado aos links quando o mouse passa sobre eles */
+    color: #4da3ff; /* altera a cor do texto dos links quando o mouse passa sobre eles */
+}
