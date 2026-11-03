@@ -36,6 +36,19 @@ nav a:hover {
     color: #4da3ff; /* altera a cor do texto dos links quando o mouse passa sobre eles */
 }
 
+.parallax {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/fujiilm-xs10.jpg"); /* define a imagem de fundo da seção parallax com um gradiente escuro sobre ela para melhorar a legibilidade do texto, o 0.5 é a opacidade do gradiente, quanto mais próximo de 1, mais escuro fica */
+    background-attachment: fixed; /* faz com que a imagem de fundo fique fixa enquanto o conteúdo rola */
+    background-size: cover; /* faz com que a imagem de fundo cubra toda a área da seção, mantendo a proporção */
+    background-position: center; /* centraliza a imagem de fundo na seção */
+    min-height: 70vh; /* define a altura mínima da seção como 70% da altura da janela de visualização */
+    color: #fff; /* define a cor do texto da seção parallax */
+    text-align: center; /* centraliza o texto dentro da seção parallax */   
+    display: flex; /* define o layout da seção parallax como flexível */
+    align-items: center; /* alinha os itens da seção parallax verticalmente ao centro */
+    justify-content: center; /* alinha os itens da seção parallax horizontalmente ao centro */
+}
+
 section {
     min-height: 60vh; /* define a altura mínima da seção como 60% da altura da janela de visualização */
     padding: 20px; /* adiciona espaçamento interno à seção */
@@ -43,9 +56,9 @@ section {
 }
 
 aside {
-    background-color:#0c3969e3; /* define a cor de fundo da aside */
-    color: #fff; /* define a cor do texto da aside */
-    border-left: 5px solid #333; /* adiciona uma borda à esquerda da aside */
+    background-color:#0c3969e3; /* define a cor de fundo do aside */
+    color: #fff; /* define a cor do texto do aside */
+    border-left: 5px solid #333; /* adiciona uma borda à esquerda da aside, com 5 pixels de largura e cor escura */
     padding: 20px; /* adiciona espaçamento interno à aside */
 }
 
