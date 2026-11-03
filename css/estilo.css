@@ -1,7 +1,11 @@
-/* o asterisco (*) é um seletor universal que seleciona todos os elementos da página 
-o que é: box-sizing: border-box; é uma propriedade CSS que altera o modelo de caixa padrão dos elementos HTML. Por padrão, a largura e altura de um elemento são calculadas apenas com base no conteúdo, sem incluir o padding (preenchimento interno) e a border (borda). Quando você define box-sizing: border-box;, a largura e altura do elemento passam a incluir o padding e a border, tornando mais fácil controlar o tamanho total do elemento. */
+/* Seletor universal (*): pega todos os elementos da página.
+   Serve para padronizar o comportamento de todos eles.
+   Quando usar: no começo do arquivo CSS. */
 * {
-    box-sizing: border-box; /* inclui padding e border na largura e altura dos elementos */
+    /* O que é: muda o modelo de caixa padrão.
+       Por padrão, padding e borda ficam fora da largura e da altura.
+       Com border-box, eles entram na conta, e fica mais fácil controlar o tamanho total. */
+    box-sizing: border-box;
 }
 
 body {
@@ -13,8 +17,11 @@ body {
 header {
     background-color: #333; /* define a cor de fundo do header */
     color: #fff; /* define a cor do texto do header */
-    padding: 20px; /* adiciona espaçamento interno ao header, diferente do margin, ele aumenta o tamanho do elemento */
+    padding: 20px; /* adiciona espaçamento interno entre a borda e o conteúdo, nesse caso, ele está ligado ao border-box, então não aumenta o tamanho total do header */
     text-align: center; /* centraliza o texto dentro do header */
+    position: sticky; /* faz com que o header fique fixo no topo da página ao rolar */
+    top: 0; /* define a posição do header no topo da página */
+    z-index: 1000; /* define a ordem de empilhamento do header, garantindo que ele fique acima de outros elementos */
 }
 
 nav a {
@@ -27,4 +34,25 @@ nav a {
 nav a:hover {
     text-decoration: underline; /* adiciona sublinhado aos links quando o mouse passa sobre eles */
     color: #4da3ff; /* altera a cor do texto dos links quando o mouse passa sobre eles */
+}
+
+section {
+    min-height: 60vh; /* define a altura mínima da seção como 60% da altura da janela de visualização */
+    padding: 20px; /* adiciona espaçamento interno à seção */
+    scroll-margin-top: 120px; /* adiciona uma margem de rolagem para que o conteúdo não fique escondido atrás do header fixo */
+}
+
+aside {
+    background-color:#0c3969e3; /* define a cor de fundo da aside */
+    color: #fff; /* define a cor do texto da aside */
+    border-left: 5px solid #333; /* adiciona uma borda à esquerda da aside */
+    padding: 20px; /* adiciona espaçamento interno à aside */
+}
+
+footer {
+    background-color: #333; /* define a cor de fundo do rodapé */
+    color: #fff; /* define a cor do texto do rodapé */
+    padding: 20px; /* adiciona espaçamento interno entre a borda e o conteúdo, nesse caso, ele está ligado ao border-box, então não aumenta o tamanho total do rodapé */
+    text-align: center; /* centraliza o texto dentro do rodapé 
+     */
 }
